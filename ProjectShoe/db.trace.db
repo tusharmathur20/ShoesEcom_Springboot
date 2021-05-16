@@ -1,0 +1,19 @@
+2021-05-13 11:38:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "STRINGDECODE('Nothing as fly, nothing as comfortable, nothing as proven\u2014the Nike Air Max 90 SE stays true to its OG roots w... (368)"; SQL statement:
+insert into product (category_id, description, imagename, name, price, size, id) values (?, ?, ?, ?, ?, ?, ?) [22001-200]
+2021-05-13 11:49:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DESCRIPTION[*]"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+DESCRIPTION [42001-200]
+2021-05-13 19:17:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT* FRIM[*] PRODUCT"; SQL statement:
+select* frim product [42000-200]
+2021-05-13 19:17:04 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT* FRIO[*] PRODUCT"; SQL statement:
+select* frio product [42000-200]
+2021-05-13 19:21:45 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO roles(id, name)VALUES
+(1, 'ROLE_ADMIN),
+(2, 'ROLE_USER[*]');"; SQL statement:
+INSERT INTO roles(id, name)VALUES
+(1, 'ROLE_ADMIN),
+(2, 'ROLE_USER'); [42000-200]
